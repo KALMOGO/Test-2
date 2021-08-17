@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\userpackage{titlesec}
+
+\usepackage{graphicx}
+\begin{document}
+	voici un simple exemple \textbf{de mise en gras avec}\LaTeX{} la mise en italique se fait avec \textit{ce texte est en italic} quant est il de la mise en capital : on utilise la commande \textsc{pour mettre le texte en majuscule} pour les familles type machine on utilise la commande \texttt{qui permet la mise en forme des familles type machine } ou \textsf{empattement}.\\
+	
+		Bon pour repartir a la ligne il faut juste taper sur la touche entrer et voila c'est bon \textbf{j'espere que vous avez remarquer
+    l'echappement pour la mise en des caracteres '} pour les accents, on utilise l'echappement \textsf{ \large \'e , \^ , \c{c})} de meme on utiluse la commande {\tiny pour les texte en miniscule} pour {\huge pour les textes tres enorme}\\
+		\title{les environements : }
+	On utilise les environements pour creation des objets evolues notamment les \textbf{les tableaux, les listes ordonn\'ees et non ordonn\'ees , les listes de definition, la mise des fontes, les taille des texte ..} on utilise de se fait la syntasce begin{} puis le nom de la commande a appliquer.\\
+	Exple de listes :
+	\begin{itemize}
+		
+		\item \textbf{itemize} pour definir les listes
+		\item \textbf{enumerate(1., 2., ...) }pour les enumerations
+		\item \textbf{description} pour les listes de description
+		\item \textbf{tabular} pour la creation de tableau
+	\end{itemize}		 
+	On essaie maintenant la commande d'environement de centrage
+	\begin{center}
+		\begin{verbatim}
+			ce texte doit \^etre simplement centre et il est dans la variable d'environement verbatim 
+		\end{verbatim}
+ce texte n'etait pas r\'eellement dans l'environement \textbf{center};
+	\end{center}
+
+commen\c{c}ont maintenant $\acute{a}$ la ligne
+
+	\begin{tabular}{|r|l|l|c|}
+		\hline
+		pays & & capitale & contiment\\
+		\hline
+		Burkina Faso & & Ouagadougou & Afrique\\
+		\hline
+		France & & Paris & Europe\\
+		\hline
+		Rwanda & & Kigali & Afrique\\
+		\hline
+ & & & \\
+ \hline
+	\end{tabular}
+\begin{center}
+	\textbf{Creation de nouveau tableau comme exercice}
+\end{center}
+\textbf{le sectionnement de mon document} \\
+Le sectionnement permet une bonne disposition des paragraphes et une structuration correcte de notre document pour se faire on utilise les commande dites de sectionnement que sont: chaper{}, paragraphe{}, section{} avec leur variant \'etoil\'e comme section*{}
+\\
+\underline{Exple: }\\ 
+\section{Introduction}
+\label{intro}
+\section{le cinema}
+le cinema est une activit\'e pleinement importante dans la vie des \^etre humans 
+\subsection{Ces Acteurs}
+\begin{itemize}
+	\item Realisateur
+	\item cameraman
+	\item les acteurs
+	\item les cine\^{a}tre 
+\end{itemize}
+
+\subsection{les adeptes du cinema }
+\section{La musique}
+d'ici je souhaite referencer l'introduction ~\ref{intro} va
+\section*{Conclusion}
+
+\tableofcontents{table de matiere}
+\footnotemark{mark}
+\footnotetext{ceci est mise comme note de page
+	}\paragraph{Etude du march\'e}
+% TODO: \usepackage{graphicx} required
+\begin{center}
+	\includegraphics[width=10cm, height=1cm]{../../Images/pupy}
+\end{center}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[ height=1cm]{../../Images/pupy}\\
+	bla bla (commentaite sur la figure)
+	\caption{une caption sur l'image}
+	\label{key}
+	
+\end{figure}
+\begin{frame}
+	slide
+\end{frame}
+
+
+\vspace*{\stretch{1}}
+\begin{center}
+	\begin{minipage}{10cm}
+		
+	\end{minipage}
+\end{center}
+\vspace*{\stretch{1}}
+
+
+\end{document}
